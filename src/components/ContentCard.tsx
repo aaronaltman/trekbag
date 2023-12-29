@@ -1,12 +1,13 @@
 import React from "react";
 import Header from "./Header";
+import PackingList from "./PackingList";
 
 export default function ContentCard() {
   return (
-    <section className="bg-zinc-400 w-[40rem] h-[20rem] -mt-20">
+    <section className="flex flex-col bg-slate-50 w-[50rem] ">
       <Header />
-      <div className="flex justify-between">
-        <section>Main content with list goes here</section>
+      <div className="flex">
+        <PackingList />
         <section>Sidebar Goes here</section>
       </div>
     </section>
