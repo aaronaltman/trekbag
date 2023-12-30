@@ -1,7 +1,15 @@
 "use client";
 import React, { useState } from "react";
 
+type ToDo = {
+  id: number;
+  text: string;
+  completed: boolean;
+};
+
 export default function MyList({}) {
+  const [toDoList, setToDoList] = useState<ToDo[]>([]);
+
   return (
     <div>
       <h2 className="py-3 px-10">My List</h2>
