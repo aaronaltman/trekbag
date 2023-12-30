@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header className="flex justify-between bg-slate-100">
+    <header className="flex justify-between bg-slate-200">
       <div>
         <Image src="/nav.png" alt="TrekBag Logo" width={100} height={100} />
       </div>
