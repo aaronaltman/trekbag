@@ -4,10 +4,10 @@ import Header from "@/components/Header";
 import React, { useState } from "react";
 
 export default function Page() {
-  const [items, setItems] = useState([]); // This will hold the list of items
-  const [newItem, setNewItem] = useState(""); // This will hold the new item input
+  const [items, setItems] = useState<string[]>([]); // This will hold the list of items
+  const [newItem, setNewItem] = useState<string>(""); // This will hold the new item input
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault(); // Prevents form from refreshing the page
     if (newItem.trim() !== "") {
       setItems([...items, newItem]); // Adds the new item to the list of items
